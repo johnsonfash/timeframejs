@@ -1,0 +1,36 @@
+{
+  "name": "timeframe",
+  "version": "1.0.0",
+  "description": "Localize date formatting, both in the past and present in human readable format, i.e 2 minutes ago, in 5 years etc.",
+  "main": "src/timeframe.js",
+  "module": "src/animate.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsonfash/timeframe.git"
+  },
+  "keywords": [],
+  "author": "Johnson Fash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnsonfash/timeframe/issues"
+  },
+  "homepage": "https://github.com/johnsonfash/timeframe#readme",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "webpack": "^5.33.2",
+    "node-gyp-build": "^4.2.3",
+    "webpack-cli": "^4.6.0"
+  }
+}
