@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/johnsonfash/timeframe.git"
   },
-  "keywords": [],
+  "keywords": ["time","microformat","timeago","date","format","datetime","javascript timeago"],
   "author": "Johnson Fash",
   "license": "MIT",
   "bugs": {
