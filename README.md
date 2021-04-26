@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/johnsonfash/timeframe.svg?branch=main)](https://travis-ci.com/johnsonfash/timeframe) ![GitHub package.json version](https://img.shields.io/github/package-json/v/johnsonfash/timeframe)
 
-Localize format of date i.e 1 minute ago, just now, in 3 years etc
+Localized date format i.e 1 minute ago, just now, in 3 years etc
 
 More Examples:
 
