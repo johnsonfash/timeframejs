@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Localize date formatting, both in the past and present in human readable format, i.e 2 minutes ago, in 5 years etc.",
   "main": "src/timeframe.js",
-  "module": "src/animate.js",
+  "module": "src/timeframe.js",
   "directories": {
     "test": "test"
   },
