@@ -1,5 +1,7 @@
 # Javascript-timeframe
 
+[![Build Status](https://travis-ci.com/johnsonfash/timeframe.svg?branch=main)](https://travis-ci.com/johnsonfash/timeframe)
+
 Localize date formatting, both past and present in human readable format
 
 It format date in readable format
