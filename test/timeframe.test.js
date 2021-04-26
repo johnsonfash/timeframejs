@@ -1,4 +1,4 @@
-const {timeFrame} = require('../src/timeframe');
+const timeFrame = require('../src/timeframe');
 
 test('get date format', () => {
     const date = new timeFrame('2020-05-17T03:24:00');
