@@ -6,7 +6,7 @@ module.exports = {
     main: path.resolve(__dirname, './src/timeframe.js'),
   },
   output: {
-    filename: 'timeframe.bundle.js',
+    filename: 'timeframejs.bundle.js',
     library: {
       name: "TimeFrame",
       type: "umd"

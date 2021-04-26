@@ -21,19 +21,19 @@ More Examples:
 **Option A. NPM install**
 
 ```javascript
-npm install timeframe --save
+npm install timeframejs --save
 ```
 
 **Option B. Use CDN**
 
 You can load timeframe directly from jsDelivr CDN.
 
-`https://cdn.jsdelivr.net/npm/timeframe@latest/dist/timeframe.bundle.js`
+`https://cdn.jsdelivr.net/npm/timeframe@latest/dist/timeframejs.bundle.js`
 
 For example, place this in your HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/timeframe@latest/dist/timeframe.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/timeframe@latest/dist/timeframejs.bundle.js"></script>
 ```
 
 **Option C. Copy code from file**
@@ -41,13 +41,13 @@ For example, place this in your HTML:
 Copy the [timeframe.js](https://github.com/johnsonfash/timeframe/tree/master/src/timeframe.js) file containing only few lines of code to your project, and load it.
 
 ```html
-<script src="timeframe.js"></script>
+<script src="timeframejs.js"></script>
 ```
 
 # 👷 Use
 
 ```javascript
-import TimeFrame from 'timeframe';
+import TimeFrame from 'timeframejs';
 
 const date = new TimeFrame('2020-05-17T03:24:00');
 //const date = new TimeFrame(1589682240); unix
