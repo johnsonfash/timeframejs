@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/johnsonfash/timeframe.svg?branch=main)](https://travis-ci.com/johnsonfash/timeframe) ![GitHub package.json version](https://img.shields.io/github/package-json/v/johnsonfash/timeframe)
 
-Javascript date format i.e just now, 1 minute ago, in 3 years, hace 8 meses (local) etc. fast, 1kb size, no depencies.
+Javascript date format i.e just now, 1 minute ago, in 3 years, hace 8 meses (local) etc. fast, 1kb size, no dependency.
 
 More Examples:
 
