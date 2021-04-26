@@ -1,10 +1,11 @@
 {
-  "name": "timeframe",
+  "name": "timeframejs",
   "version": "1.0.0",
   "description": "Localize date formatting, both in the past and present in human readable format, i.e 2 minutes ago, in 5 years etc.",
   "main": "src/timeframe.js",
   "module": "src/timeframe.js",
   "directories": {
+    "example": "examples",
     "test": "test"
   },
   "scripts": {
@@ -16,7 +17,15 @@
     "type": "git",
     "url": "git+https://github.com/johnsonfash/timeframe.git"
   },
-  "keywords": ["time","microformat","timeago","date","format","datetime","javascript timeago"],
+  "keywords": [
+    "time",
+    "microformat",
+    "timeago",
+    "date",
+    "format",
+    "datetime",
+    "javascript timeago"
+  ],
   "author": "Johnson Fash",
   "license": "MIT",
   "bugs": {
@@ -32,5 +41,6 @@
     "webpack": "^5.33.2",
     "node-gyp-build": "^4.2.3",
     "webpack-cli": "^4.6.0"
-  }
+  },
+  "dependencies": {}
 }
