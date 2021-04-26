@@ -1,6 +1,6 @@
 # Javascript-timeframe
 
-[![Build Status](https://travis-ci.com/johnsonfash/timeframe.svg?branch=main)](https://travis-ci.com/johnsonfash/timeframe)
+[![Build Status](https://travis-ci.com/johnsonfash/timeframe.svg?branch=main)](https://travis-ci.com/johnsonfash/timeframe) ![GitHub package.json version](https://img.shields.io/github/package-json/v/johnsonfash/timeframe)
 
 Localize date formatting, both past and present in human readable format
 
