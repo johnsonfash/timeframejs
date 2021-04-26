@@ -1,303 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../dist/timeframe.bundle.js"></script>
   <title>Timeframe (timeago) library - notification</title>
+  <link rel="stylesheet" href="https://apluswebmaker.com/about/main.css">
   <style>
-:root {
-  --blue: var(--blueColour, rgb(70, 181, 228));
-  --blueHue: var(--blueColour, rgba(70, 181, 228, 0.9));
-  --red: var(--redColor, rgb(14, 109, 123));
-  --black: var(--blackColor, rgb(0, 0, 0));
-  --grey: var(--greyColor, grey);
-  --white: var(--whiteColor, white);
-  --lightgreyFake: var(--lightgreyColorFake, #f9f9f9);
-  --lightgrey: var(--lightgreyColor, lightgrey);
-  --whitesmoke: var(--whitesmokeColor, whitesmoke);
-}
-section .resume-header {
-  display: flex;
-  background: var(--lightgreyFake);
-  padding: 1em;
-  border-radius: 0 2em 0 2em;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-section .resume-header h1 {
-  font-family: Poppins, Helvetica, sans-serif;
-  font-size: 2.2em;
-  padding: 20px 0;
-}
-section .resume-header p {
-  flex: 1 1 100%;
-  font-size: 0.9em;
-}
-section .resume-title {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 1.4em;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-underline-position: under;
-  text-decoration-color: var(--red);
-}
-#timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
-  content: '';
-  display: block;
-  width: 100%;
-  clear: both;
-}
-#timeline *, #timeline *:before, #timeline *:after {
-  box-sizing: border-box;
-}
-#timeline {
-  position: relative;
-  transition: all 0.4s ease;
-  margin: 50px 20px;
-  padding: 0px;
-  width: 90%;
-}
-#timeline:before {
-  content: "";
-  width: 3px;
-  height: 100%;
-  background: var(--red);
-  top: 0;
-  position: absolute;
-  left: 0;
-}
-#timeline:after {
-  content: "";
-  clear: both;
-  display: table;
-  width: 100%;
-}
+    :root {
+      --blue: var(--blueColour, rgb(70, 181, 228));
+      --blueHue: var(--blueColour, rgba(70, 181, 228, 0.9));
+      --red: var(--redColor, rgb(14, 109, 123));
+    }
 
-#timeline .timeline-item {
-  margin-bottom: 50px;
-  position: relative;
-}
-#timeline .timeline-item .timeline-icon {
-  background: var(--red);
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: -2px;
-  left: 0;
-  overflow: hidden;
-  margin-left: -18px;
-  border-radius: 50%;
-  box-shadow: 0.3px 1px 0 rgba(0, 0, 0, 0.1), -0.3px 3px 0 rgba(0, 0, 0, 0.1);
-}
+    main {
+      max-width: 960px;
+      margin: 3em auto;
+    }
 
-#timeline .timeline-item .timeline-content {
-  background: var(--white);
-  padding: 20px;
-  box-shadow: 0.3px 3px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  width: 90%;
-  float: right;
-}
-
-#timeline .timeline-item .timeline-content h2 {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
-  background: var(--red);
-  color: #fff;
-  margin: -20px -20px 0 -20px;
-  font-weight: 300;
-  font-size: 1.2em;
-  border-radius: 3px 3px 0 0;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-}
-#timeline .timeline-item .timeline-content h2 span {
-  font-size: 0.8em;
-}
-#timeline .timeline-item .timeline-content p {
-  font-size: 0.9em;
-  line-height: 1.5;
-  padding-top: 10px;
-}
-#timeline .timeline-item .timeline-content:before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  width: 0;
-  height: 0;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  left: 10%;
-  margin-left: -6px;
-  border-left: 0;
-  border-right: 7px solid var(--red);
-}
-
-#timeline .timeline-item .timeline-content.right {
-  float: right;
-}
-#timeline .timeline-item .timeline-content.right:before {
-  content: '';
-  right: 45%;
-  left: 10%;
-  margin-left: -6px;
-  border-left: 0;
-  border-right: 7px solid var(--red);
-}
-
-section .skills-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-section .skills-flex h1 {
-  margin-bottom: 30px;
-}
-section .skills-flex .design {
-  flex: 1 1 100%
-}
-section .skills-flex .coding {
-  flex: 1 1 100%
-}
-section .skills-flex p {
-  margin: 20px 0 2px 0;
-  font-size: 0.9em;
-  font-weight: 600;
-  font-family: Poppins, Helvetica, sans-serif;
-}
-section .skills-flex .progress-bar {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  border: 1px solid #c6c6c6;
-  padding: 0.1em;
-  box-sizing: border-box;
-  border-radius: 1em;
-}
-section .skills-flex .progress-bar span {
-  display: grid;
-  background: var(--red);
-  position: relative;
-  font-size: 0.6em;
-  padding: 0.25em;
-  margin: 0;
-  color: white;
-  text-align: right;
-  border-radius: 1em;
-}
-section .skills-flex .progress-bar span::after {
-  position: absolute;
-  top: -18px;
-  right: 0;
-  font-size: 1.2em;
-  color: grey;
-}
-
-section .skills-flex span.ui::after {
-  content: '87%';
-}
-section .skills-flex span.mysql::after {
-  content: '65%';
-}
-section .skills-flex span.gimp::after {
-  content: '70%';
-}
-section .skills-flex span.html::after {
-  content: '92%';
-}
-section .skills-flex span.css::after {
-  content: '80%';
-}
-section .skills-flex span.wire-f::after {
-  content: '92%';
-}
-section .skills-flex span.react::after {
-  content: '82%';
-}
-section .skills-flex span.vue::after {
-  content: '75%';
-}
-section .skills-flex span.node::after {
-  content: '70%';
-}
-section .skills-flex span.javascript::after {
-  content: '75%';
-}
-section .skills-flex span.laravel::after {
-  content: '85%';
-}
-section .skills-flex span.php::after {
-  content: '90%';
-}
-img {
-  display: block;
-  max-width: 100%;
-}
-
+    img {
+      display: block;
+      max-width: 100%;
+    }
   </style>
 </head>
+
 <body>
-
-  <div id="timeline">
-    <div class="timeline-item">
-      <div class="timeline-icon">
-      </div>
-      <div class="timeline-content">
-        <h2> &nbsp; 56 minutes ago <span>- Time Ago</span></h2>
-        <p>
-          <img src="./asset/carbon(1).png" alt="" srcset="">
-        </p>
+  <main>
+    <div class="about-me">
+      <div id="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon">
+          </div>
+          <div class="timeline-content">
+            <h2> &nbsp; 56 minutes ago <span>- Time Ago</span></h2>
+            <p>
+              <img src="./asset/carbon(1).png" alt="" srcset="">
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">
+          </div>
+          <div class="timeline-content right">
+            <h2>&nbsp; 1589754240 <span>- Unix</span></h2>
+            <p>
+              <img src="./asset/carbon(2).png" alt="">
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">
+          </div>
+          <div class="timeline-content">
+            <h2>&nbsp; hace 8 meses <span>- Spanish</span></h2>
+            <p>
+              <img src="./asset/carbon(3).png" alt="" srcset="">
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">
+          </div>
+          <div class="timeline-content right">
+            <h2>&nbsp; in 3 months<span>- Future</span></h2>
+            <p>
+              <img src="./asset/carbon(4).png" alt="" srcset="">
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">
+          </div>
+          <div class="timeline-content right">
+            <h2> &nbsp; 3 days ago <span>- Locale</span></h2>
+            <p>
+              <img src="./asset/carbon(5).png" alt="" srcset="">
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="timeline-item">
-      <div class="timeline-icon">
-      </div>
-      <div class="timeline-content right">
-        <h2>&nbsp; 1589754240 <span>- Unix</span></h2>
-        <p>
-        <img src="./asset/carbon(2).png" alt="">
-        </p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-icon">
-      </div>
-      <div class="timeline-content">
-        <h2>&nbsp; hace 8 meses <span>- Spanish</span></h2>
-        <p>
-          <img src="./asset/carbon(3).png" alt="" srcset="">
-        </p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-icon">
-      </div>
-      <div class="timeline-content right">
-        <h2>&nbsp; in 3 months<span>- Future</span></h2>
-        <p>
-          <img src="./asset/carbon(4).png" alt="" srcset="">        </p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-icon">
-      </div>
-      <div class="timeline-content right">
-        <h2> &nbsp; 3 days ago <span>- Locale</span></h2>
-        <p>
-          <img src="./asset/carbon(5).png" alt="" srcset="">
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <script>
-
-  </script>
+  </main>
 </body>
+
 </html>
