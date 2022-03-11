@@ -23,7 +23,7 @@ module.exports = class TimeFrame {
     unix() {
       return parseInt((this.date.getTime() / 1000).toFixed(0));
     }
-    date(data){
+    setDate(data){
         this.date = this.unixChecker(data);
         return this;
     }
