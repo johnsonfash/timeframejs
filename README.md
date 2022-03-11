@@ -78,6 +78,10 @@ const date = new TimeFrame('2020-05-17T23:24:00');
   // returns the current milliseconds rather that the argument passed into TimeFrame
   //  1611501800638
   
+    console.log( date.date('2020-05-17T23:24:00').now() );
+  // returns the current milliseconds rather that the argument passed into TimeFrame
+  //  1611501800638
+  
   console.log( date.unix() );
   // 1589754240
   // returns unix time interger of passed argument since january 1st 1970
