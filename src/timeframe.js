@@ -1,4 +1,4 @@
-module.exports = class TimeFrame {
+var TimeFrame = class {
     constructor() {
       this.date = this.unixChecker(arguments);
       this.startDate = Date.now();
@@ -99,3 +99,8 @@ module.exports = class TimeFrame {
       }
     }
   }
+
+if (typeof module !== 'undefined')
+{
+  module.exports = TimeFrame
+}
